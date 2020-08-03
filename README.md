@@ -1,4 +1,5 @@
-# HTML2PDF is a working proto of Puppeteer, which is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. Puppeteer runs headless by default, but can be configured to run full (non-headless) Chrome or Chromium.
+# HTML2PDF
+This is a working proto of Puppeteer, which is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. Puppeteer runs headless by default, but can be configured to run full (non-headless) Chrome or Chromium.
 
 What can I do?
 Most things that you can do manually in the browser can be done using Puppeteer! Here are a few examples to get you started:
