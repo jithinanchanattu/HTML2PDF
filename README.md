@@ -27,8 +27,11 @@ Most things that you can do manually in the browser can be done using Puppeteer!
 
 # Parameter Arguments
 **URLPath:** Target HTTP link to the website which needs to be converted to PDF.
+
 **PDFRand:** Values - "Y" or "N". For enabling the random file name for exportPDF.
+
 **PDFMerge:** Values - "Y" or "N". For merging multiple PDF files.
+
 **PDFLink:** Either the file name for exportPDF or relative path to destination.
 
 Sample URL: 
