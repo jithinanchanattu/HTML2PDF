@@ -11,8 +11,9 @@ config_data = {
     "static_variable": "static",
     "randFileName": false,
     "pdf": {
+        "defExportPath":"./exportFiles/",
         "defFileName":"exportPDF",
-        "defPath": "./dump/",
+        "defPath": "./mergeFiles/",
         "format": "A4",
         "displayHeaderFooter": true,
         "headerTemplate": '<div style="text-align: center;background: #1abc9c;color: white;font-size: 30px;"><h1>Header</h1><p>My supercool header</p></div>',
@@ -25,7 +26,7 @@ config_data = {
         }
     },
     "mergePDF":{
-        "destPath":"./dump"
+        "destPath":"./mergedFile"
     }
 }
 return config_data

@@ -28,7 +28,7 @@ async function printPDF(URLPath, PDFLink, PDFRand, PDFMerge) {
     }
     
     const pdf = await page.pdf({ 
-          path: PDFLink + '.pdf',
+          path: config_data.pdf.defExportPath + PDFLink + '.pdf',
           displayHeaderFooter: config_data.pdf.displayHeaderFooter,
           headerTemplate: config_data.pdf.headerTemplate,
           format: config_data.pdf.format,
@@ -74,7 +74,7 @@ http.createServer(function (req, res) {
 
       var buffer = printPDF(URLPath, PDFLink, "", PDFMerge).then((response) => {
         console.log('Converted to PDF');
-        mergePDF(["./1.pdf", "./2.pdf", "./3.pdf"], "Y");
+        mergePDF(["./mergeFiles/1.pdf", "./mergeFiles/2.pdf", "./mergeFiles/3.pdf"], "Y");
       })
     .catch(err => console.log(err));
     }
