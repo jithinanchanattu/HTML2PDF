@@ -26,10 +26,10 @@ Most things that you can do manually in the browser can be done using Puppeteer!
 -   Test Chrome Extensions.
 
 # Parameter Arguments
-**URLPath: ** Target HTTP link to the website which needs to be converted to PDF
-**PDFRand: ** Values - "Y" or "N". For enabling the random file name for exportPDF.
-**PDFMerge: ** Values - "Y" or "N". For merging multiple PDF files.
-**PDFLink: ** Either the file name for exportPDF or relative path to destination.
+**URLPath:** Target HTTP link to the website which needs to be converted to PDF.
+**PDFRand:** Values - "Y" or "N". For enabling the random file name for exportPDF.
+**PDFMerge:** Values - "Y" or "N". For merging multiple PDF files.
+**PDFLink:** Either the file name for exportPDF or relative path to destination.
 
 Sample URL: 
 http://localhost:8080/http.js?URLPath=aHR0cHM6Ly9ibG9nLnJpc2luZ3N0YWNrLmNvbQ==&PDFRand=N&PDFMerge=Y&PDFLink=ExportPDF
