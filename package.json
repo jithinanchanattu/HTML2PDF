@@ -9,6 +9,7 @@
   "author": "Jithin Joji Anchanattu",
   "license": "ISC",
   "dependencies": {
+    "combine-multiple-pdfs": "^1.0.4",
     "puppeteer": "^5.2.1"
   }
 }
