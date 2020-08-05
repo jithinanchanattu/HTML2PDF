@@ -10,7 +10,7 @@
 Check out the following repo!, https://github.com/jithinanchanattu/HTML2PDF.git
 
 To run in your local, run the following in cmd from the checked out root folder:
-npm i 
+```npm i ```
 
 The app can logic can be used inside the angular app or can be hosted in a server and can be called directly. (Note: Nessesary code changes needs to be done)
 
