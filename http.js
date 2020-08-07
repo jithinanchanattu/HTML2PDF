@@ -26,6 +26,22 @@ async function printPDF(URLPath, PDFLink, PDFRand, PDFMerge) {
     if(PDFLink == undefined || PDFLink == null){
       PDFLink = config_data.pdf.defFileName;
     }
+
+    //HACK
+    //If the height needs to be statically placed
+    // await page.addStyleTag({
+    //      content: '@page { size: auto; }', 
+    // or //content: @page { size:${width}px ${height}px;}
+    // });
+    
+    //If the height needs to be dynamically placed 
+    // let height = await page.evaluate(
+    //   () => document.documentElement.offsetHeight
+    // );
+
+    // let width = await page.evaluate(
+    //   () => document.documentElement.offsetHeight
+    // );
     
     const pdf = await page.pdf({ 
           path: config_data.pdf.defExportPath + PDFLink + '.pdf',
@@ -33,12 +49,12 @@ async function printPDF(URLPath, PDFLink, PDFRand, PDFMerge) {
           headerTemplate: config_data.pdf.headerTemplate,
           format: config_data.pdf.format,
           printBackground: config_data.pdf.printBackground,
-          margin: {
+          margin: { //none
               left: config_data.pdf.margin.left,
               top: config_data.pdf.margin.top,
               right: config_data.pdf.margin.right,
               bottom: config_data.pdf.margin.bottom
-          }
+          },
       });
     await browser.close();
     //return pdf; //This will return a buffer with the proper content type to the callback
